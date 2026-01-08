@@ -41,57 +41,18 @@
         <div class="grid md:grid-cols-3 gap-8">
             <div class="glass p-8 rounded-[32px] text-center">
                 <div class="text-3xl mb-4">👂</div>
-                <h3 class="font-bold mb-2">Listen</h3>
-                <p class="text-sm text-gray-500 italic mb-4 text-[10px] uppercase tracking-widest">Continuous Monitoring</p>
-                <p class="text-xs text-gray-400 leading-relaxed">High-fidelity 48kHz edge processing detects room noise spikes before they reach your subconscious.</p>
+                <h3 class="font-bold mb-2 text-sm uppercase tracking-widest">Listen</h3>
+                <p class="text-xs text-gray-400 leading-relaxed">High-fidelity edge processing detects room noise spikes before they reach your subconscious.</p>
             </div>
             <div class="glass p-8 rounded-[32px] text-center border-t-2 border-t-cyan-500">
                 <div class="text-3xl mb-4">🌊</div>
-                <h3 class="font-bold mb-2">Mask</h3>
-                <p class="text-sm text-gray-500 italic mb-4 text-[10px] uppercase tracking-widest">Adaptive Response</p>
+                <h3 class="font-bold mb-2 text-sm uppercase tracking-widest">Mask</h3>
                 <p class="text-xs text-gray-400 leading-relaxed">Dynamic gain algorithms swell your landscape volume to drown out frequencies that trigger startle responses.</p>
             </div>
             <div class="glass p-8 rounded-[32px] text-center">
                 <div class="text-3xl mb-4">📊</div>
-                <h3 class="font-bold mb-2">Learn</h3>
-                <p class="text-sm text-gray-500 italic mb-4 text-[10px] uppercase tracking-widest">Sleep Analytics</p>
-                <p class="text-xs text-gray-400 leading-relaxed">Wake up to a full visual report showing every 'Shielding Event' where your sleep was actively protected.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-24 px-6 max-w-5xl mx-auto border-t border-white/5">
-        <div class="grid md:grid-cols-2 gap-12 items-center">
-            <div class="glass p-8 rounded-[32px]">
-                <h3 class="text-cyan-400 font-bold mb-6 uppercase text-xs tracking-widest">Decibel Impact Scale</h3>
-                <div class="space-y-4">
-                    <div class="flex justify-between items-end">
-                        <span class="text-[10px] text-gray-500 uppercase">Quiet Bedroom (30dB)</span>
-                        <div class="w-1/2 h-1.5 bg-white/5 rounded-full overflow-hidden">
-                            <div class="bg-cyan-950 h-full w-[30%]"></div>
-                        </div>
-                    </div>
-                    <div class="flex justify-between items-end">
-                        <span class="text-[10px] text-cyan-400 font-bold tracking-tight uppercase">AuraMask Barrier (45dB)</span>
-                        <div class="w-1/2 h-1.5 bg-white/5 rounded-full overflow-hidden border border-cyan-500/20">
-                            <div class="bg-cyan-600 h-full w-[45%]"></div>
-                        </div>
-                    </div>
-                    <div class="flex justify-between items-end">
-                        <span class="text-[10px] text-white text-glow uppercase">Sudden Spike (75dB+)</span>
-                        <div class="w-1/2 h-1.5 bg-white/5 rounded-full overflow-hidden">
-                            <div class="bg-red-500 h-full w-[80%] animate-pulse"></div>
-                        </div>
-                    </div>
-                </div>
-                <p class="mt-6 text-[10px] text-gray-600 italic">Sudden spikes over 15dB trigger the "Thalamic Startle Response." AuraMask raises the acoustic floor to prevent these spikes from waking the brain.</p>
-            </div>
-            <div>
-                <h2 class="text-3xl font-bold text-white mb-6 tracking-tight">Protect the Thalamus.</h2>
-                <p class="text-gray-400 text-sm leading-relaxed mb-6">
-                    While you sleep, your thalamus acts as a gatekeeper. Steady, broadband sounds like our Midnight Rain landscape allow the brain to filter out ambient noise. 
-                </p>
-                <p class="text-gray-400 text-sm leading-relaxed font-bold">AuraMask keeps the gate closed.</p>
+                <h3 class="font-bold mb-2 text-sm uppercase tracking-widest">Learn</h3>
+                <p class="text-xs text-gray-400 leading-relaxed">Wake up to a report showing every 'Shielding Event' where your sleep was actively protected.</p>
             </div>
         </div>
     </section>
@@ -107,25 +68,6 @@
                 <div id="auraPulse" class="absolute inset-0 bg-cyan-500/10 opacity-0 transition-opacity duration-300 pointer-events-none"></div>
             </div>
 
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
-                <div class="sound-card active p-4 rounded-2xl flex flex-col items-center">
-                    <span class="text-xl mb-1">🌧️</span>
-                    <span class="text-[9px] font-bold uppercase tracking-widest text-cyan-400">Midnight Rain</span>
-                </div>
-                <div class="sound-card opacity-30 p-4 rounded-2xl flex flex-col items-center">
-                    <span class="text-xl mb-1">🌬️</span>
-                    <span class="text-[9px] font-bold uppercase tracking-widest">Deep Fan</span>
-                </div>
-                <div class="sound-card opacity-30 p-4 rounded-2xl flex flex-col items-center">
-                    <span class="text-xl mb-1">🏔️</span>
-                    <span class="text-[9px] font-bold uppercase tracking-widest">White Peaks</span>
-                </div>
-                <div class="sound-card opacity-30 p-4 rounded-2xl flex flex-col items-center">
-                    <span class="text-xl mb-1">🌲</span>
-                    <span class="text-[9px] font-bold uppercase tracking-widest">Forest Fog</span>
-                </div>
-            </div>
-
             <div class="glass p-12 rounded-[40px] max-w-md mx-auto shadow-2xl">
                 <div id="status" class="text-[10px] font-bold text-gray-500 uppercase tracking-[0.2em] mb-6">Shield: Waiting</div>
                 <button id="startShield" class="w-full py-6 bg-cyan-600 hover:bg-cyan-500 rounded-2xl font-bold text-xl transition-all shadow-xl shadow-cyan-900/50">
@@ -137,8 +79,7 @@
 
     <section id="launch" class="py-32 px-6 text-center border-t border-white/5">
         <div class="max-w-xl mx-auto">
-            <h2 class="text-2xl font-bold mb-4">Join the Mobile Waitlist</h2>
-            <p class="text-gray-500 text-sm mb-8 leading-relaxed px-4 text-center">Dedicated iOS and Android apps are in development. Be the first to know when we launch background processing.</p>
+            <h2 class="text-2xl font-bold mb-4">Join the Waitlist</h2>
             <form action="https://formspree.io/f/your-email" method="POST" class="flex flex-col sm:flex-row gap-3">
                 <input type="email" name="email" placeholder="email@example.com" required 
                        class="flex-1 px-6 py-4 bg-white/5 border border-white/10 rounded-2xl focus:outline-none focus:border-cyan-500 text-sm">
@@ -149,14 +90,16 @@
         </div>
     </section>
 
-    <audio id="audioSource" loop><source src="rain.mp3" type="audio/mpeg"></audio>
+    <audio id="audioSource" loop crossorigin="anonymous">
+        <source src="rain.mp3" type="audio/mpeg">
+    </audio>
 
     <footer class="py-12 text-center text-[10px] text-gray-700 uppercase tracking-widest">
         &copy; 2026 AuraMask Labs | Neural Sleep Defense
     </footer>
 
     <script>
-        let audioContext, analyser, microphone, scriptNode;
+        let audioContext, analyser, microphone, scriptNode, gainNode, source;
         const sound = document.getElementById('audioSource');
         const startBtn = document.getElementById('startShield');
         const statusText = document.getElementById('status');
@@ -175,21 +118,45 @@
 
         startBtn.addEventListener('click', async () => {
             if (audioContext) { location.reload(); return; }
+            
             try {
+                // Initialize Audio Context
                 audioContext = new (window.AudioContext || window.webkitAudioContext)();
+                
+                // Allow CORS for the audio element
+                sound.crossOrigin = "anonymous";
+                
                 const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+                
+                // Set up the Gain Node (Virtual Volume Knob)
+                gainNode = audioContext.createGain();
+                source = audioContext.createMediaElementSource(sound);
+                
                 analyser = audioContext.createAnalyser();
                 microphone = audioContext.createMediaStreamSource(stream);
                 scriptNode = audioContext.createScriptProcessor(2048, 1, 1);
                 
                 analyser.smoothingTimeConstant = 0.7;
                 analyser.fftSize = 256;
+
+                // Path: Rain Sound -> Volume Knob -> Speakers
+                source.connect(gainNode);
+                gainNode.connect(audioContext.destination);
+
+                // Path: Mic Input -> Analyser -> Visualizer/Logic
                 microphone.connect(analyser);
                 analyser.connect(scriptNode);
                 scriptNode.connect(audioContext.destination);
 
-                sound.play();
-                sound.volume = 0.15;
+                // iOS requires explicit resume on user interaction
+                if (audioContext.state === 'suspended') {
+                    await audioContext.resume();
+                }
+
+                await sound.play();
+                // Set initial volume to 10%
+                gainNode.gain.setValueAtTime(0.1, audioContext.currentTime); 
+
                 statusText.innerText = "Shield: Active Defense";
                 statusText.classList.replace('text-gray-500', 'text-cyan-400');
                 startBtn.innerText = "STOP";
@@ -210,16 +177,18 @@
 
                     auraPulse.style.opacity = (maxVolume / 255) * 0.5;
 
-                    // Dynamic Masking Logic
-                    if (maxVolume > 35) {
-                        let targetVol = Math.min(1.0, (maxVolume / 80) + 0.2);
-                        sound.volume = targetVol;
+                    // Trigger volume swell based on room noise
+                    if (maxVolume > 40) {
+                        // Swell to 80% volume smoothly
+                        gainNode.gain.setTargetAtTime(0.8, audioContext.currentTime, 0.1);
                     } else {
-                        sound.volume = 0.15;
+                        // Fade back to 10% volume
+                        gainNode.gain.setTargetAtTime(0.1, audioContext.currentTime, 0.5);
                     }
                 };
             } catch (err) {
-                alert("Please enable microphone access for adaptive shielding.");
+                console.error("Audio initialization failed:", err);
+                alert("Please ensure microphone access is granted and the device is not on silent.");
             }
         });
     </script>
